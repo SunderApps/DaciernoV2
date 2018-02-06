@@ -1,0 +1,13 @@
+﻿body {
+    height: 100vh;
+    background-image: url('../images/DAciernoOrange-min.jpg');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+}

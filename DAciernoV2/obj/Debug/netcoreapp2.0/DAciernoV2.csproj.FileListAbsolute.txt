@@ -1,0 +1,11 @@
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\bin\Debug\netcoreapp2.0\DAciernoV2.deps.json
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\bin\Debug\netcoreapp2.0\DAciernoV2.runtimeconfig.json
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\bin\Debug\netcoreapp2.0\DAciernoV2.runtimeconfig.dev.json
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\bin\Debug\netcoreapp2.0\DAciernoV2.dll
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\bin\Debug\netcoreapp2.0\DAciernoV2.pdb
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\obj\Debug\netcoreapp2.0\DAciernoV2.csprojResolveAssemblyReference.cache
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\obj\Debug\netcoreapp2.0\DAciernoV2.csproj.CoreCompileInputs.cache
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\obj\Debug\netcoreapp2.0\DAciernoV2.AssemblyInfoInputs.cache
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\obj\Debug\netcoreapp2.0\DAciernoV2.AssemblyInfo.cs
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\obj\Debug\netcoreapp2.0\DAciernoV2.dll
+C:\Users\sam\MEGA\Code\Websites\DaciernoV2\DAciernoV2\obj\Debug\netcoreapp2.0\DAciernoV2.pdb

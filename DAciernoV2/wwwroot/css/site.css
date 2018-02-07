@@ -11,3 +11,10 @@ footer {
     right: 20px;
     bottom: 0px;
 }
+
+#visualizer {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    left: 400px;
+}

@@ -12544,11 +12544,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\sam\\MEGA\\Code\\Websites\\DaciernoV2\\DAciernoV2\\DAciernoV2.csproj",
+      "projectUniqueName": "C:\\Users\\sam\\MEGA\\Code\\Websites\\DAciernoV2\\DAciernoV2\\DAciernoV2.csproj",
       "projectName": "DAciernoV2",
-      "projectPath": "C:\\Users\\sam\\MEGA\\Code\\Websites\\DaciernoV2\\DAciernoV2\\DAciernoV2.csproj",
+      "projectPath": "C:\\Users\\sam\\MEGA\\Code\\Websites\\DAciernoV2\\DAciernoV2\\DAciernoV2.csproj",
       "packagesPath": "C:\\Users\\sam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sam\\MEGA\\Code\\Websites\\DaciernoV2\\DAciernoV2\\obj\\",
+      "outputPath": "C:\\Users\\sam\\MEGA\\Code\\Websites\\DAciernoV2\\DAciernoV2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

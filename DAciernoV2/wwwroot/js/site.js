@@ -46,10 +46,15 @@ var visualizers = {
         draw_frame: halo_draw_frame     // Draws a frame of this visualizer
     },
     lines: {
-        num_lines: 9,
-        width: 1000,
-        height: 200,
-        init: function () { }
+        num_lines: 9,                   // Number of lines
+        width: 1000,                    // Width of canvas
+        height: 200,                    // Height of canvas
+        base: 0,                        // Constant added to line angles
+        strength: 1,                    // Multiplier for line angles
+        canvs: {},                      // The canvas to draw on
+        context: {},                    // The context to draw with
+        init: lines_init,               // Initializes the visualizer
+        draw_frame: lines_draw_frame    // Draws a frame of this visualizer
     }
 };
 
@@ -82,6 +87,7 @@ function init_visualizer() {
 
     // Initialize Visualizer Objects
     visualizers.halo.init();
+    visualizers.lines.init();
 }
 
 // Visualizer Step Function
@@ -96,12 +102,13 @@ function render_frame() {
 
     // Run the visualizers
     visualizers.halo.draw_frame();
+    //visualizers.lines.draw_frame();
 }
 
 
 // Initialize the halo visualizer
 function halo_init() {
-    this.canvas = document.getElementById('visualizer');
+    this.canvas = document.getElementById('visualizer_halo');
     this.context = this.canvas.getContext('2d');
 }
 
@@ -141,3 +148,52 @@ function halo_draw_frame() {
 
     } // END: For each bar
 } // END: halo_draw_frame()
+
+// Initialize the line visualizer
+function lines_init() {
+    this.canvas = document.getElementById('visualizer_lines');
+    this.context = this.canvas.getContext('2d');
+}
+
+// Draw the lines visualizer
+function lines_draw_frame() {
+
+    // Clear the visualizer
+    this.context.clearRect(0, 0, this.width, this.height);
+
+    // For each line
+    for (var i = 0; i < this.num_lines; i++) {
+
+        // Change direction more on later lines
+        var step = this.width / (i + 4);
+
+        // Begin the line
+        this.context.beginPath();
+        this.context.moveTo(0, this.height / 2);
+
+        // For each step
+        for (var j = 0; j <= this.width; j += step) {
+
+            // Calculate the height of the curve
+            var height = 0;
+            for (var k = i * (frequency.length / this.num_lines) + (j / step); k < i * (frequency.length / this.num_lines) + (j / step) + step; k++) {
+                if(k < 1028)
+                height += frequency[k];
+                //console.log(k);
+            }
+
+            height /= ((frequency.length / this.num_lines) / (i + 4));
+            console.log(height + '~~~');
+            height *= this.strength;
+            height += this.base;
+
+            // Draw an arc to the next point
+            this.context.quadraticCurveTo(step / 2 + j, height, j + step, this.height / 2);
+            this.context.moveTo(j + step, this.height / 2);
+            console.log(step / 2  + j + ' ' + height + ' ' + j + step + ' ' + this.height / 2);
+        }
+
+        // Draw the line
+        this.context.stroke();
+    }
+}
